@@ -1,13 +1,10 @@
-import { useState } from "react";
 import type { ProfileCardProps } from "../types";
 import SkillBadge from "./SkillBadge";
+import LikeButton from "./LikeButton";
 
 function ProfileCard({ name, role, bio, avatarUrl, skills, links }: ProfileCardProps) {
-  // useState gives us the current value and the only function allowed to change it.
-  const [likes, setLikes] = useState(0);
-
   return (
-    <main className="max-w-md mx-auto bg-white rounded-2xl shadow-md p-6 flex flex-col gap-4">
+    <section className="max-w-md mx-auto bg-white rounded-2xl shadow-md p-6 flex flex-col gap-4">
       <div className="flex items-center gap-4">
         {avatarUrl ? (
           <img
@@ -48,14 +45,8 @@ function ProfileCard({ name, role, bio, avatarUrl, skills, links }: ProfileCardP
         ))}
       </div>
 
-      {/* Never change state directly — always hand the setter a new value. */}
-      <button
-        onClick={() => setLikes(likes + 1)}
-        className="self-start mt-2 rounded-lg bg-sky-600 text-white px-4 py-2 text-sm hover:bg-sky-700 transition-colors"
-      >
-        ♥ {likes}
-      </button>
-    </main>
+      <LikeButton />
+    </section>
   );
 }
 
