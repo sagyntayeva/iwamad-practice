@@ -1,0 +1,12 @@
+/* Figma: PostCard — direction vertical, gap 12, padding space/4, radius radius/md,
+   fill color/surface, 1px stroke color/border */
+.ui-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}

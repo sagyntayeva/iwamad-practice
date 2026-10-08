@@ -1,15 +1,12 @@
 import type { Skill } from "../types";
+import Tag from "./ui/Tag";
 
 type SkillBadgeProps = {
   skill: Skill;
 };
 
 function SkillBadge({ skill }: SkillBadgeProps) {
-  return (
-    <span className="inline-block rounded-full bg-sky-100 text-sky-700 text-sm px-3 py-1 mr-2 mb-2">
-      {skill.name}
-    </span>
-  );
+  return <Tag>{skill.name}</Tag>;
 }
 
 export default SkillBadge;

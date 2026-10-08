@@ -1,9 +1,5 @@
 function Footer() {
-  return (
-    <footer className="w-full py-6 px-4 text-center text-sm text-slate-400">
-      1 &amp; TypeScript
-    </footer>
-  );
+  return <footer className="site-footer">© 2026 KBTU SITE Students</footer>;
 }
 
 export default Footer;
