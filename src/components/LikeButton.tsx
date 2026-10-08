@@ -1,16 +1,13 @@
 import { useLikes } from "../context/useLikes";
+import Button from "./ui/Button";
 
 function LikeButton() {
   const { likes, addLike } = useLikes();
 
   return (
-    <button
-      type="button"
-      onClick={addLike}
-      className="self-start mt-2 rounded-lg bg-sky-600 text-white px-4 py-2 text-sm hover:bg-sky-700 transition-colors"
-    >
+    <Button variant="primary" onClick={addLike} className="self-start">
       Like: {likes}
-    </button>
+    </Button>
   );
 }
 

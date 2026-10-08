@@ -1,0 +1,20 @@
+/*
+ * Design tokens — exported from the Figma variable collection "SIS 2"
+ * (IWaMAD · SIS 2 Blog - Starter Design). Naming: color/primary → --color-primary.
+ */
+:root {
+  --color-primary: #1d4ed8;
+  --color-on-primary: #ffffff;
+  --color-text: #1f2937;
+  /* Contrast fix: Figma value #9ca3af is 2.54:1 on --color-surface (fails WCAG AA 4.5:1).
+     #6b7280 is 4.83:1 and stays in the same cool-gray family. */
+  --color-text-muted: #6b7280;
+  --color-surface: #ffffff;
+  --color-border: #d1d5db;
+
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-6: 24px;
+
+  --radius-md: 8px;
+}

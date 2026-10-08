@@ -4,9 +4,9 @@ import Footer from "./Footer";
 
 function Layout() {
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col justify-between">
+    <div className="min-h-screen flex flex-col justify-between">
       <Header />
-      <main className="w-full px-4">
+      <main className="site-main w-full flex-1">
         <Outlet />
       </main>
       <Footer />

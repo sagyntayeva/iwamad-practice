@@ -1,0 +1,27 @@
+/* Figma: Button — padding space/4 × space/2, radius radius/md, Inter 12 Regular */
+.ui-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4) var(--space-2);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font: inherit;
+  font-size: 12px;
+  line-height: normal;
+  cursor: pointer;
+}
+
+/* variant=Primary — fill color/primary, label color/on-primary */
+.ui-button--primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+/* variant=Secondary — fill color/surface, stroke + label color/primary */
+.ui-button--secondary {
+  background-color: var(--color-surface);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
