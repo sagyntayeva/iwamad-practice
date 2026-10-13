@@ -11,6 +11,8 @@
   --color-text-muted: #6b7280;
   --color-surface: #ffffff;
   --color-border: #d1d5db;
+  /* Not in Figma — added in Week 06 for form errors. 6.47:1 on --color-surface (WCAG AA). */
+  --color-error: #b91c1c;
 
   --space-2: 8px;
   --space-4: 16px;
