@@ -6,6 +6,7 @@ const navLinks = [
   { to: "/", label: "Home", end: true },
   { to: "/skills", label: "Skills", end: false },
   { to: "/contact", label: "Contact", end: false },
+  { to: "/register", label: "Register", end: false },
 ];
 
 function Header() {
