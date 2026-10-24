@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router";
 import Card from "../components/ui/Card";
+import EventSignupForm from "../components/EventSignupForm";
 import { events } from "../data/events";
 
 export function EventDetailsPage() {
@@ -24,6 +25,7 @@ export function EventDetailsPage() {
       <p className="text-muted">
         {event.date} · {event.place}
       </p>
+      <EventSignupForm key={event.id} event={event} />
       <Link to="/events" className="text-link text-link--strong self-start">
         ← Back to events
       </Link>
