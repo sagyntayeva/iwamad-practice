@@ -22,6 +22,9 @@ function Header() {
             {link.label}
           </NavLink>
         ))}
+        <NavLink to="/events" className="site-nav__link">
+          Events
+        </NavLink>
       </nav>
       <span className="site-header__likes">Likes: {likes}</span>
     </header>
